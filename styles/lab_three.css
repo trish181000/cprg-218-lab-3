@@ -1,0 +1,49 @@
+.card-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    text-wrap: balance;
+    align-items: baseline;
+    row-gap: 30px;
+    column-gap: 15px;
+  }
+ 
+@media (max-width: 768px) {
+    .card {
+        flex: 1 0 calc(100% - 20px);
+    }
+}
+ 
+@media (min-width: 768px) {
+    .card {
+        flex: 1 0 calc(50% - 20px);
+    }
+}
+ 
+@media (min-width: 1200px) {
+    .card {
+        flex: 1 0 calc(33% - 20px);
+    }
+}
+ 
+.card-container {
+    list-style-type: none}
+    .youtube-video-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+      }
+     
+      .youtube-video-container::after {
+        display: block;
+        content: "Is the Cane Corso right for you";
+        padding-top: 56.25%;
+      }
+     
+      .youtube-video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
